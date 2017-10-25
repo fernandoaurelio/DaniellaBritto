@@ -1,0 +1,60 @@
+header
+	+clearfix
+	background:
+		image: url('../imgs/slide-topo-inicio.jpg')
+		repeat: no-repeat
+		attachment: fixed
+		position: top center
+	width: 100%
+	height: 430px
+	
+	+breakpoint($tablet)
+		height: 300px
+	+breakpoint($celular)
+		height: 150px
+	&:after
+			content: ""
+			display: block
+			position: absolute
+			width: 100%
+			height: 10px
+			margin-top: -18px
+			+gradient(90deg, $cafe, $marrom-claro)
+		
+	nav.topo 
+		ul 
+			li 
+				a 
+					display: inline-block
+					float: right
+					padding-right: 40px
+					text-transform: uppercase
+					color: $branco
+		+breakpoint($celular)
+			display: none
+
+	.logo
+		+breakpoint($celular)
+			position: absolute
+			top: -10%
+			left: -18%
+
+		img 
+			width: 580px
+			height: 90px
+			margin: 170px auto 170px auto !important
+			position: relative
+			left: 30%
+			+breakpoint($tablet)
+				width: 500px
+				height: 85px
+				margin: 100px auto 100px auto !important
+			+breakpoint($celular)
+				width: 250px
+				height: 50px
+
+
+				
+				
+			
+

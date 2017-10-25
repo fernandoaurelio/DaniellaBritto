@@ -1,0 +1,36 @@
+main 
+	padding-top: 50px
+	text-align: center
+
+h2
+	font-weight: $light
+	text-transform: uppercase
+	position: relative
+	text-align: center
+	padding: 50px
+ul.redes
+	+flexbox
+	align-items: center
+	justify-content: space-around
+	margin: 50px 0
+	text-align: center
+	[class^="rede-"]
+		width: 180px
+		height: 180px
+		background: 
+			color: $marrom-claro
+		+border-radius(190px)
+
+		&:hover
+			background:
+				color: $branco
+			border: solid 1px $cafe
+			color: $marrom-claro
+			+transition(0.2s)
+	text-align: center
+	+font-size(80px)
+	line-height: 180px
+	li 
+		display: inline-block
+
+
