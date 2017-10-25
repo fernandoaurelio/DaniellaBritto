@@ -7,10 +7,11 @@
     <link rel="stylesheet" type="text/css" href="css/geral.css">
     <link rel="stylesheet" type="text/css" href="css/plugin.css">
     <link rel="stylesheet" href="css/orcamento.css">
+    <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
 	<title>:: Daniella Britto :: Doces Finos e Eventos</title>
 </head>
 <body>
-	<header>
+	<header class="wow fadeIn">
 		<div class="container">
 			<nav class="topo">
 				<ul>
@@ -22,7 +23,7 @@
 				</ul>
 			</nav>
 			<div class="logo">
-				<img src="imgs/trademark.svg" alt="Daniella Britto">
+				<img class="wow bounceIn" src="imgs/trademark.svg" alt="Daniella Britto">
 			</div>
 		</div>
 	</header>
@@ -66,6 +67,12 @@
 	<img src="imgs/trademark_brown.png" alt="Logomarca">
 	<p>Todos os direitos reservados a Daniella Britto - 2017</p>
 </footer>
-	
+	<script src="bower_components/wow/dist/wow.min.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			new WOW().init();
+		});
+	</script>
 </body>
 </html>

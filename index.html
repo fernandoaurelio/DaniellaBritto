@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" type="text/css" href="css/geral.css">
     <link rel="stylesheet" type="text/css" href="css/plugin.css">
+    <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
 	<title>:: Daniella Britto :: Doces Finos e Eventos</title>
 </head>
 <body>
-	<header>
+	<header class="wow fadeIn">
 		<div class="container">
 			<nav class="topo">
 				<ul>
@@ -21,7 +22,7 @@
 				</ul>
 			</nav>
 			<div class="logo">
-				<img src="imgs/trademark.svg" alt="Daniella Britto">
+				<img class="wow bounceIn" src="imgs/trademark.svg" alt="Daniella Britto">
 			</div>
 		</div>
 	</header>
@@ -29,9 +30,9 @@
 <main>
 	<h2>Siga-nos nas Redes Sociais</h2>
 	<ul class="redes">
-		<li class="rede-facebook"><i class="fa fa-facebook"></i></li>
-		<li class="rede-casamento"><i class="fa fa-birthday-cake"></i></span></li>
-		<li class="rede-instagram"><i class="fa fa-instagram"></i></li>
+		<li class="rede-facebook wow slideInLeft" data-wow-delay="1s"><i class="fa fa-facebook"></i></li>
+		<li class="rede-casamento wow slideInLeft" data-wow-delay="1.3s"><i class="fa fa-birthday-cake"></i></span></li>
+		<li class="rede-instagram wow slideInLeft" data-wow-delay="1.5s"><i class="fa fa-instagram"></i></li>
 	</ul>
 	
 	<button class="botao grande">Solicite seu Orçamento</button>
@@ -40,6 +41,12 @@
 	<img src="imgs/trademark_brown.png" alt="Logomarca">
 	<p>Todos os direitos reservados a Daniella Britto - 2017</p>
 </footer>
-	
+	<script src="bower_components/wow/dist/wow.min.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			new WOW().init();
+		});
+	</script>
 </body>
 </html>

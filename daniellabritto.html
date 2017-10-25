@@ -7,10 +7,11 @@
     <link rel="stylesheet" type="text/css" href="css/geral.css">
     <link rel="stylesheet" type="text/css" href="css/plugin.css">
     <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
 	<title>:: Daniella Britto :: Doces Finos e Eventos</title>
 </head>
 <body>
-	<header>
+	<header class="wow fadeIn">
 		<div class="container">
 			<nav class="topo">
 				<ul>
@@ -22,7 +23,7 @@
 				</ul>
 			</nav>
 			<div class="logo">
-				<img src="imgs/trademark.svg" alt="Daniella Britto">
+				<img class="wow bounceIn" src="imgs/trademark.svg" alt="Daniella Britto">
 			</div>
 		</div>
 	</header>
@@ -31,26 +32,26 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
-				<img src="imgs/foto-perfil.png" alt="Foto Perfil Daniella Britto">
+				<img class="wow fadeInUp" src="imgs/foto-perfil.png" alt="Foto Perfil Daniella Britto">
 			</div>
 			<div class="col-sm-6">
 				<h1>Daniella Britto</h1>
 				<br>
 				<hr>
-				<p>
+				<p class="wow flipInY">
 					Formada em Gastronomia pela Univille. Daniella Britto
 					encontrou no pâtisserie, sua forma de trasnformar amor em comida!
 					e foi assim, que aos 20 anos de idade, Daniella lançava sua marca 
-					<img src="imgs/trademark_brown.png">
+					<img class="wow flipInY" src="imgs/trademark_brown.png">
 				</p>
-				<p>
+				<p class="wow flipInY">
 					Hoje, Daniella, conta com eventos até início de 2018
 					já agendados. Isso tudo, fruto de muito trabalho, dedicação e 
 					perfeccionismo!
 					<br>
 					<br>
 
-					<em>
+					<em class="wow flipInY">
 						Com os Doces Finos Daniella Britto 
 					seu evento será memorável
 					</em>
@@ -65,6 +66,12 @@
 	<img src="imgs/trademark_brown.png" alt="Logomarca">
 	<p>Todos os direitos reservados a Daniella Britto - 2017</p>
 </footer>
-	
+	<script src="bower_components/wow/dist/wow.min.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			new WOW().init();
+		});
+	</script>
 </body>
 </html>
