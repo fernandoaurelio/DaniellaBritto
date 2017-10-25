@@ -1,0 +1,29 @@
+header
+	+clearfix
+	background:
+		image: url('../imgs/slide-topo-sobre.jpg')
+		repeat: no-repeat
+		attachment: fixed
+		position: top center
+	width: 100%
+	height: 430px
+	
+	+breakpoint($tablet)
+		height: 300px
+	+breakpoint($celular)
+		height: 150px
+
+p 
+	text-align: justify
+	font-size: 20px
+	img
+		+breakpoint($tablet)
+			width: 100px
+			height: auto
+		+breakpoint($cellar)
+			width: 50px
+			height: auto
+		width: 200px
+		height: 35px
+	em
+		text-align: center
