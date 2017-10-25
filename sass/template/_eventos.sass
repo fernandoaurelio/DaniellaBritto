@@ -1,0 +1,25 @@
+header
+	
+	background:
+		image: url('../imgs/slide-topo-eventos.jpg')
+		repeat: no-repeat
+		attachment: fixed
+		position: top center
+	width: 100%
+	height: 430px
+	
+	+breakpoint($tablet)
+		height: 300px
+	+breakpoint($celular)
+		height: 150px
+p 
+	text-align: center 
+	margin-bottom: 30px
+section.fotos
+	ul 
+		li 
+			figure 
+				text-align: center
+				img 
+					+img-responsive
+				overflow: hidden
